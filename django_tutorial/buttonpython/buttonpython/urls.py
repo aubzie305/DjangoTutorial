@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import views
+from . import controllers
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.button),
-    path('first_exec_btn/', views.first_output, name="first_script"),
-    path('second_exec_btn/', views.second_output, name="second_script"),
+    path('', controllers.button),
+    path('first_exec_btn/', controllers.first_output, name="first_script"),
+    path('second_exec_btn/', controllers.second_output, name="second_script"),
 ]

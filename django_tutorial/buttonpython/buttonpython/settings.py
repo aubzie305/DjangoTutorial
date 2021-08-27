@@ -54,7 +54,7 @@ ROOT_URLCONF = 'buttonpython.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['views'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
