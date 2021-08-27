@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Python Django Tutorial-Button Script
+        </title>
+    </head>
+
+    <body>
+        <button onclick="location.href='{% url 'first_script' %}'">Execute first script</button> <hr>
+        {% if first_data %}
+        {{first_data}}
+        {% endif %}
+
+        <button onclick="location.href='{% url 'second_script' %}'">Execute second script</button> <hr>
+        {% if second_data %}
+        {{second_data }}
+        {% endif %}
+    </body>
+</html>
