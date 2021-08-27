@@ -8,7 +8,8 @@ To setup local dev environment:
   <li>Download latest version of Python</li>
   Get the latest version from here: https://www.python.org/downloads/. <br>
   <b>Note: (I think this is for Windows users only) <br>
-  Make sure to add Python to your environment variables so your machine recognizes <code>python</code> or <code>py</code> as a command</b>
+  Make sure to add Python to PATH. <br>
+  This will add Python as an environment variable so your machine recognizes <code>python</code> or <code>py</code> as a command</b>
   
   <li>Activate the virtual environment</li>
   In a command prompt or git bash, run <code> django_tutorial/Scripts/activate.bat </code>
@@ -17,7 +18,7 @@ To setup local dev environment:
   Ensure that virtual environment is active before proceeding. <br>
   Installing Python will also install a package manager called pip. <br>
   Do <code>py -m pip install django</code> <br>
-  Do <code>pip install requests</code> <br>
+  Do <code>py -m pip install requests</code> <br>
   
   <li>Run local server</li>
   <code>cd</code> into directory <code>django_tutorial/buttonpython</code> and run <code>py manage.py runserver</code> <br>
