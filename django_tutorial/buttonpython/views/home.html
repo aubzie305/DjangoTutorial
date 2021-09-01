@@ -1,24 +1,26 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<html>
-    <head>
-        <title>
-            Python Django Tutorial-Button Script
-        </title>
-        {% load static %}
-        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-    </head>
+{% block content %}
+  <div class="container text-center">
+    <h1>Django App Experiment Home Page</h1>
 
-    <body>
-        <button onclick="location.href='{% url 'first_script' %}'" class="btn btn-primary">Execute first script</button> <hr>
-        {% if first_data %}
-        {{first_data}}
-        {% endif %}
+    <button onclick="location.href='{% url 'first_script' %}'" class="btn btn-primary">
+      Execute first script
+    </button> <hr>
+    {% if first_data %}
+    <div class="container">
+      {{first_data}}
+    </div>
+    {% endif %}
 
-        <button onclick="location.href='{% url 'second_script' %}'">Execute second script</button> <hr>
-        {% if second_data %}
-        {{second_data }}
-        {% endif %}
-    </body>
-</html>
+    <button onclick="location.href='{% url 'second_script' %}'" class="btn btn-primary">
+      Execute second script
+    </button> <hr>
+    {% if second_data %}
+    <div class="container">
+      {{second_data }}
+    </div>
+    {% endif %}
+
+  </div>
+{% endblock %}
