@@ -1,13 +1,17 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <title>
             Python Django Tutorial-Button Script
         </title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
     </head>
 
     <body>
-        <button onclick="location.href='{% url 'first_script' %}'">Execute first script</button> <hr>
+        <button onclick="location.href='{% url 'first_script' %}'" class="btn btn-primary">Execute first script</button> <hr>
         {% if first_data %}
         {{first_data}}
         {% endif %}
